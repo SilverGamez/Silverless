@@ -1,0 +1,21 @@
+{
+  "dependencies": {
+    "@discordjs/builders": "^1.4.0",
+    "chalk": "^2.4.2",
+    "discord.js": "^14.7.1",
+    "fs": "^0.0.1-security",
+    "path": "^0.12.7",
+    "silver-db": "^1.0.3"
+  },
+  "name": "average-discord-bot",
+  "version": "1.0.0",
+  "main": "index.js",
+  "devDependencies": {},
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "description": ""
+}
