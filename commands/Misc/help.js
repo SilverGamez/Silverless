@@ -12,3 +12,9 @@ module.exports = {
 module.exports.data = new SlashCommand()
     .setName('help')
     .setDescription('Tells you all the commands')
+    .addStringOption(option => {
+        option
+            .setName("command")
+            .setDescription("The command to get info for")
+            .setRequired(false)
+    })
