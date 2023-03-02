@@ -15,6 +15,8 @@ module.exports = {
         const command = client.commands.get(commandName);
         if (!command) return
 
+        if (command.BotDevOnly && interaction.user.id !== client.config.BotConfig.botdev) return;
+
         try {
             await command.run(interaction, client, db);
         } catch (e) {

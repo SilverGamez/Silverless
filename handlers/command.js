@@ -11,4 +11,12 @@ module.exports = async (client) => {
             console.log(chalk.blue(`[Command]`) + chalk.whiteBright(` ${command.data.name} has loaded`));
         }
     });
+
+    const messagecommands = fs.readdirSync(`./messagecommands/`).filter(file => file.endsWith('.js'));
+
+    for (const file of messagecommands) {
+        const command = require(`../messagecommands/${file}`);
+        client.messagecommands.set(command.name, command);
+        console.log(chalk.blue(`[Command]`) + chalk.whiteBright(` ${command.name} has loaded`));
+    }
 }

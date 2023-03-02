@@ -1,3 +1,8 @@
+
+-------------
+Slash command
+-------------
+
 const SlashCommand = require('@discordjs/builders').SlashCommandBuilder;
 const Discord = require('discord.js');
 
@@ -12,3 +17,21 @@ module.exports = {
 module.exports.data = new SlashCommand()
     .setName('')
     .setDescription('')
+
+
+---------------
+Message command
+---------------
+
+const Discord = require('discord.js');
+
+module.exports.run = async (message, args, client, db) => {
+    
+}
+
+module.exports = {
+    name: '',
+    description: '',
+    usage: '',
+    category: ''
+}

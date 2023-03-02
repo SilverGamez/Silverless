@@ -1,6 +1,6 @@
 const { REST } = require('@discordjs/rest');
 const { Routes } = require('discord-api-types/v9');
-const { token } = require('../config');
+const { BotConfig } = require('../config.json');
 const fs = require('fs');
 const chalk = require('chalk').default;
 
@@ -19,7 +19,7 @@ module.exports = async (client, guildId) => {
 
   const rest = new REST({
     version: '9'
-  }).setToken(token);
+  }).setToken(BotConfig.token);
 
   (async () => {
     try {

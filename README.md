@@ -10,8 +10,12 @@ You can download [here](https://github.com/SilverGamez/average-discord-bot/archi
 
 ```python
 {
-    "token": "TOKEN",
-    "defaultPrefix": "PREFIX",
-    "botdev": "BOTDEV"
+    "BotConfig": {
+        "token": "TOKEN",
+        "botdev": "BOTDEV_ID"
+    },
+    "EmbedConfig": {
+        "Color": "COLOR"
+    }
 }
 ```
