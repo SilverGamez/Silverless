@@ -1,5 +1,9 @@
 {
-    "token": "MTA3ODI0MzA2NTk2MzIyNTExMA.GmNFwh.yvk-ZVsoOFFQukWXnSYHqvsbBr7LYh2tE0wwRE",
-    "defaultPrefix": "-",
-    "botdev": "737862913309540413"
+    "BotConfig": {
+        "token": "TOKEN",
+        "botdev": "737862913309540413"
+    },
+    "EmbedConfig": {
+        "Color": "0x0099FF"
+    }
 }
