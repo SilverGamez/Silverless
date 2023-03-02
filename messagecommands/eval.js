@@ -14,7 +14,7 @@ module.exports = {
         try {
             let output = await util.inspect((await eval(code)));
 
-            if (output.includes(client.config.BotConfig.Token)) output = output(client.config.BotConfig.Token, "bot_token");
+            if (output.includes(client.config.BotConfig.token)) output = output.replace(client.config.BotConfig.token, "bot_token");
 
             if (code.length > 1024) code = "Code has too many characters. Please use under 1024 characters."
 
