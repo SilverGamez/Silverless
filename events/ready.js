@@ -2,7 +2,7 @@ const chalk = require('chalk').default;
 
 module.exports = {
     event: 'ready',
-    async run(client) {
+    async run(client, db) {
         const time = Math.floor(Math.round() * 3000) + 750
         setTimeout(() => {
             console.log(chalk.red(`[Bot]`) + chalk.whiteBright(` Bot is loading`));

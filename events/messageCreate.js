@@ -13,7 +13,7 @@ module.exports = {
         if (cmd.length == 0) return;
         let command = client.messagecommands.get(cmd);
 
-        // if (command.BotDevOnly && message.author.id == client.config.BotConfig.botdev) return;
+        if (command.BotDevOnly && message.author.id !== client.config.BotConfig.botdev) return message.channel.send("This command is limited to botdev only.");
 
         try {
             command.run(message, args, client, db)

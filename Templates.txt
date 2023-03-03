@@ -1,0 +1,51 @@
+
+-------------
+Slash command
+-------------
+
+const SlashCommand = require('@discordjs/builders').SlashCommandBuilder;
+const Discord = require('discord.js');
+
+module.exports = {
+    usage: '',
+    category: '',
+    run: async (interaction, client, db) => {
+        
+    }
+}
+
+module.exports.data = new SlashCommand()
+    .setName('')
+    .setDescription('')
+
+
+---------------
+Message command
+---------------
+
+
+const Discord = require('discord.js');
+
+module.exports.run = async (message, args, client, db) => {
+    
+}
+
+module.exports = {
+    name: '',
+    description: '',
+    usage: '',
+    category: ''
+}
+
+
+--------------
+Event Template
+--------------
+
+
+module.exports = {
+    event: '',
+    async run(..., client, db) {
+        
+    }
+}
