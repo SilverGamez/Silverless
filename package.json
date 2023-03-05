@@ -6,7 +6,8 @@
     "fs": "^0.0.1-security",
     "mathjs": "^11.6.0",
     "path": "^0.12.7",
-    "silver-db": "^1.0.3"
+    "silver-db": "^1.0.3",
+    "weather-js": "^2.0.0"
   },
   "name": "average-discord-bot",
   "version": "1.0.0",

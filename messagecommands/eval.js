@@ -48,18 +48,18 @@ module.exports = {
             }
 
             const embed = new Discord.EmbedBuilder()
-                    .addFields({
-                        name: 'Code',
-                        value: "```js\n" + code + "```"
-                    }, {
-                        name: 'Output',
-                        value: "```sh\n" + output + "```"
-                    })
-                    .setColor(client.embedColor)
+                .addFields({
+                    name: 'Code',
+                    value: "```js\n" + code + "```"
+                }, {
+                    name: 'Output',
+                    value: "```sh\n" + output + "```"
+                })
+                .setColor(client.embedColor)
 
-                message.channel.send({
-                    embeds: [embed]
-                });
+            message.channel.send({
+                embeds: [embed]
+            });
 
         } catch (error) {
             const embed = new Discord.EmbedBuilder()

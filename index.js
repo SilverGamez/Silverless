@@ -13,7 +13,7 @@ client.messagecommands = new Discord.Collection();
 client.config = config;
 client.embedColor = config.EmbedConfig.Color;
 
-["command", "event", "interactionRowEvent"].forEach(handler => {
+["command", "event"].forEach(handler => {
     require(`./handlers/${handler}`)(client);
 });
 
