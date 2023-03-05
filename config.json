@@ -1,9 +1,9 @@
 {
     "BotConfig": {
         "token": "TOKEN",
-        "botdev": "737862913309540413"
+        "botdev": "YOUR_ID"
     },
     "EmbedConfig": {
-        "Color": "0x0099FF"
+        "Color": "COLOR"
     }
 }
