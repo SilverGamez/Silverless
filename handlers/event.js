@@ -4,8 +4,6 @@ const chalk = require('chalk').default;
 const SilverDB = require('silver-db');
 const db = new SilverDB();
 
-db.delete("key");
-
 module.exports = async (client) => {
     const eventFiles = fs.readdirSync('./events').filter(file => file.endsWith('.js'));
 

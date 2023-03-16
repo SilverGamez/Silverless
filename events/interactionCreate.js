@@ -3,7 +3,6 @@ module.exports = {
     async run(interaction, client, db) {
         if (interaction.isButton()) {
             interaction.deferUpdate();
-            require('../handlers/Button')(interaction);
         }
 
         if (!interaction.isCommand()) return;

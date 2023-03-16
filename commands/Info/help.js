@@ -41,7 +41,9 @@ module.exports = {
             const embeds = {
                 Fun: new Discord.EmbedBuilder().setColor(client.embedColor).setTitle('Fun commands'),
                 Misc: new Discord.EmbedBuilder().setColor(client.embedColor).setTitle('Misc commands'),
-                Info: new Discord.EmbedBuilder().setColor(client.embedColor).setTitle('Info commands')
+                Info: new Discord.EmbedBuilder().setColor(client.embedColor).setTitle('Info commands'),
+                Mod: new Discord.EmbedBuilder().setColor(client.embedColor).setTitle('Mod commands'),
+                Money: new Discord.EmbedBuilder().setColor(client.embedColor).setTitle('Money commands') 
             }
 
             let commands = client.commands;
